@@ -7,12 +7,21 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int x,y,holder;
+    std::cout << "Enter the number you'd like to find the square root of";
+    std::cin >>x;
+    y=x/2;
+    while (y!=holder){
+        holder =y;
+        y=(( (x / y )+y) / 2);
+        cout <<y<<"\n";
+    
+    }
+        std::cout <<y;
+  
     return 0;
 }
 
